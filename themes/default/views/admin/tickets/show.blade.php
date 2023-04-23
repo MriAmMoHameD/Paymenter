@@ -24,7 +24,7 @@
                                             {{ $ticket->client()->get()[0]->name }}
                                         </p>
                                         <p class="text-gray-600 px-3 rounded-md text-xl m-4">Product(s):
-                                            @foreach ($ticket->services()->get() as $product)
+                                            @foreach ($ticket->orders()->get() as $product)
                                                 {{ $product->name }}
                                             @endforeach
                                         </p>
