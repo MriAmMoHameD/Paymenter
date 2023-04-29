@@ -30,7 +30,7 @@ class SettingsController extends Controller
             'theme' => 'required',
             'recaptcha' => 'required',
             'recaptcha_site_key' => 'required',
-            'recaptcha_secret_key' => 'required'
+            'recaptcha_secret_key' => 'required',
         ]);
         $theme = request('theme');
         $settings = Settings::first();
